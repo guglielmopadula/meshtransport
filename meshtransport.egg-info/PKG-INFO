@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: meshtransport
+Version: 0
+Summary: Mesh Transport
+Home-page: https://github.com/gpadula/meshtransport
+Author: Guglielmo Padula
+Author-email: gpadula@sissa.it
+License: MIT
+Keywords: mesh neural networks
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: future
+Requires-Dist: numpy
