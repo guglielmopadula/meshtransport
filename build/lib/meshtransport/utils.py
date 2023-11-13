@@ -2,7 +2,7 @@ import numpy as np
 from scipy.stats import special_ortho_group
 import scipy.spatial.distance
 from tqdm import trange
-
+import torch_geometric
 def generate_uniform_box_points(v_max,v_min,N):
     points=np.zeros((N,N,N,3))
     for i in trange(N):
@@ -49,3 +49,7 @@ def compute_list(inp_positions,out_positions,r=0.015):
             list[1,acc]=l[j]
             acc=acc+1
     return list
+
+def topyg(x,edge_index,edge_attr):
+    batch=torch_geometric.data.Batch.from_data_list([torch_geometric.data.Data(x=x[i],edge_index=edge_index,edge_attr=edge_attr) for i in range(len(x))])
+    return batch

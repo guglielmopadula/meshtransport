@@ -4,7 +4,6 @@ import torch_sparse
 from .utils import compute_list
 
 
-
 class ContinousConvolution(nn.Module):
 
     def __init__(self,inp_positions,out_positions):
